@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:adjustViewBounds="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.newapp.">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/meditation" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/days_one"
+                android:text="Mindfulness Meditation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/instructiontitle"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/denk_one"
+                android:text="Introduction:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/days_one"
+                android:text='android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_mandroid:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"android:layout_marginBottom="30dp"arginBottom="30dp"'
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+<!--            <Button-->
+<!--                android:id="@+id/startactivity"-->
+<!--                style="@style/Base.TextAppearance.AppCompat"-->
+<!--                android:layout_width="190dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/layout_timer"-->
+<!--                android:fontFamily="@font/days_one"-->
+<!--                android:text="Start Activity"-->
+<!--                android:textColor="#FFFEFE"-->
+<!--                android:textSize="18sp" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/ratingtitle"
+                    style="@android:style/Widget.DeviceDefault.Light.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/linearLayout"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/denk_one"
+                    android:layout_centerHorizontal="true"
+                    android:text="Rating"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/ratingtxt"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha=".5"
+                android:fontFamily="@font/days_one"
+                android:text='Please give a rating for the activity, so that we can provide a better AI recommendation for you and other users ^^'
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_recommend2"
+                    android:fontFamily="@font/days_one"
+                    android:text="SUBMIT"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFEFE"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:numStars="5" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

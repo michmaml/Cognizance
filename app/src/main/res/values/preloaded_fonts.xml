@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/archivo_black</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/croissant_one</item>
+        <item>@font/days_one</item>
+        <item>@font/denk_one</item>
+        <item>@font/fjalla_one</item>
+        <item>@font/great_vibes</item>
+        <item>@font/lemon</item>
+    </array>
+</resources>
